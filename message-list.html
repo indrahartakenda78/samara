@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Samara</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link href="asset/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="asset/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="asset/css/skin-blue.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header bg-white">
+
+    <!-- Logo -->
+    <a href="#" class="logo bg-blue">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">
+      	<img src="asset/img/logo.png" alt="">
+      </span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">
+      	<img src="asset/img/logo-full.png" alt="">
+      </span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top bg-white" role="navigation" style="padding-right: 30px;">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="toggle-menu" data-toggle="push-menu" role="button">
+      	<img src="asset/img/menu.png" style="height: 13px;margin-top: 17px; margin-left: 15px;" alt="">
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Tasks Menu -->
+          <li>
+            <a data-toggle="modal" href='#modal-id'><i class="fa fa-search font-black-hover font-black"></i></a>
+          </li>
+          <!-- User Account Menu -->
+          <li class="dropdown user user-menu">
+            <!-- Menu Toggle Button -->
+            <a>
+              <!-- The user image in the navbar-->
+              <img src="asset/img/peopl.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="hidden-xs font-black font-semibold">Hi, Indra</span>
+            </a>
+          </li>
+          <li style="width: 1px;background-color: #ddd;height:30px;margin-top: 10px;"></li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar" class="font-black-hover font-black font-semibold">Log Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar bg-blue">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <!-- Optionally, you can add icons to the links -->
+        <li><a href="#"> <img src="asset/img/icon/icon-menu/profile.png" alt=""> <span>My Account</span></a></li>
+        <li><a href="#"> <img src="asset/img/icon/icon-menu/group.png" alt=""> <span>Participant</span></a></li>
+        <li class="active"><a href="#"> <img src="asset/img/icon/icon-menu/start.png" alt=""> <span>Start</span></a></li>
+        <li><a href="#"> <img src="asset/img/icon/icon-menu/setting.png" alt=""> <span>Setting</span></a></li>
+        <li><a href="#"> <img src="asset/img/icon/icon-menu/faq.png" alt=""> <span>Faq</span></a></li>
+        <li><a href="#"> <img src="asset/img/icon/icon-menu/help.png" alt=""> <span>Help</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+    	<span class="font-black font-bold">Class room</span>
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+    	<div class="box box-border border-all-radius">
+    		<div class="container-fluid">
+          <div class="menu-tab">
+            <ul>
+              <li>
+                <a href="">
+                  <i class="icon icon-schedulling block"></i>
+                  <div class="clearfix"></div>
+                  <h4 class="font-semibold">Schedulling</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="icon icon-class block"></i>
+                  <div class="clearfix"></div>
+                  <h4 class="font-semibold">Class Room</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="icon icon-plan block"></i>
+                  <div class="clearfix"></div>
+                  <h4 class="font-semibold">Action Plan</h4>
+                </a>
+              </li>
+              <li class="active-menu">
+                <a href="">
+                  <i class="icon icon-message block"></i>
+                  <div class="clearfix"></div>
+                  <h4 class="font-semibold">Message</h4>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="icon icon-library block"></i>
+                  <div class="clearfix"></div>
+                  <h4 class="font-semibold">Library</h4>
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>  
+        </div>
+    	</div>
+      <div class="box box-border border-all-radius">
+        <div class="container-fluid">
+          <div class="btn-control">
+            <div class="row">
+              <div class="col-sm-3 col-md-2">
+                <div class="title align-center">
+                  <h3 class="font-black font-bold">Message</h3>
+                </div>
+              </div>
+              <div class="col-sm-9 col-md-10">
+                <a href="" class="box-border bg-blue border-top-left-radius border-bottom-left-radius">
+                  <i class="fa fa-pencil-square-o font-white"></i>
+                </a>
+                 <a href="" class="box-border">
+                  <i class="fa fa-save font-black"></i>
+                </a>
+                 <a href="" class="box-border border-top-right-radius border-bottom-right-radius">
+                  <i class="fa fa-trash-o font-black"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message-table table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </th>
+                <th>
+                  <h4 class="font-black font-bold">Date</h4>
+                </th>
+                <th>
+                  <h4 class="font-black font-bold">From</h4>
+                </th>
+                <th>
+                  <h4 class="font-black font-bold">Message</h4>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="input-checkbox">
+                    <p style="opacity: 0">1</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                </td>
+                <td>
+                  <h4 class="font-grey">12/10/2017</h4>
+                </td>
+                <td>
+                  <h4 class="font-black font-bold">Facilitator</h4>
+                </td>
+                <td>
+                  <h4 class="font-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit itaque</h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="container-fluid">
+            <ul class="pagination">
+              <li><a href="#">&laquo;</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&raquo;</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <div class="modal fade modal-search" id="modal-id">
+	  	<div class="modal-dialog">
+	  		<div class="modal-content border-all-radius">
+	  			<div class="modal-header">
+	  				<button type="button" class="close font-black" data-dismiss="modal" aria-hidden="true">&times;</button>
+	  			</div>
+	  			<div class="modal-body">
+	  				  <!-- search form -->
+				      <form action="#" method="get">
+				        <div class="input-group">
+				          <input type="text" name="q" class="form-control" placeholder="Search...">
+				              <span class="input-group-btn">
+				                <button type="submit" name="search" id="search-btn" class="btn btn-flat bg-blue"><i class="fa fa-search font-white"></i>
+				                </button>
+				              </span>
+				        </div>
+				      </form>
+				      <!-- /.search form -->
+	  			</div>
+	  		</div>
+	  	</div>
+	</div>
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 3 -->
+<script src="asset/js/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="asset/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="asset/js/adminlte.min.js"></script>
+</body>
+</html>
